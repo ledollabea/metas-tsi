@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: fit-content;
+  width: 100%;
+  background-color: #2ca63e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > img {
+  padding: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+
+footer {
+  width: 100%;
+  background-color: #2ca63e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+  .dropdown {
+    margin: 10px;
+  }
+  .dropdown:hover {
+    position: relative;
+    .navigation {
+      display: block;
+      position: absolute;
+      text-decoration: none;
+      z-index: 2;
+      background-color: rgba(23, 116, 68, 1);
+      margin: 0;
+      right: 0;
+      padding: 10px 20px;
+    }
+  }
+
+  .main-screen {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2ca63e;
+  }
+  .team {
+    background-color: #2ca63e;
+    border-radius: 50%;
+  }
+  .team img {
+    width: 150px;
+    height: 150px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: none;
+    background-color: #2ca63e;
+  }
+  footer > p, footer > div{
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  .copywrite {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dropdown-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    padding: 10px 20px;
+  }
+  li {
+    padding: 10px;
+  }
+  a {
+    color: black;
+    font-weight: 400;
+  }
+  main {
+    display: flex;
+    width: 100%;
+    margin: 40px auto;
+    align-items: center;
+  }
+
+  .main-screen {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 0 40px;
+    color: #2ca63e;
+  }
+  .team {
+    background-color: #2ca63e;
+    border-radius: 50%;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #2ca63e;
+  }
+  footer > p,
+  footer > div {
+    padding: 10px 40px;
+  }
+  .copwrite-mobile{
+    display: none;
+  }
+}
